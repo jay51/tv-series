@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Series  from "./series";
 import "whatwg-fetch"; 
+import { Route, Switch} from "react-router-dom";
+import SingleShow from "./singleShow";
 
 class App extends Component {
   constructor(){
@@ -29,3 +31,11 @@ class App extends Component {
 }
 
 export default App;
+
+
+// const Main = () =>(
+//   <Switch>
+//     <Route exact path="/" component={App}/>
+//     <Route path="/series" component={SingleShow}/>
+//   </Switch>
+// );
